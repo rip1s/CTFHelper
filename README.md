@@ -1,10 +1,10 @@
 # CTFHelper
 
-A simple Burp extender helper in CTF
+  A simple Burp extension for helping solve web challenge in CTF
 
 # Description
 
- This extender will scan some sensitive files (backup files likes .index.php.swp or .git directory) in web server that normally helps solving CTF challenge faster.
+  This extension will scan some sensitive files (backup files likes .index.php.swp or .git directory) in web server that makes solving CTF challenge faster.
 
 # Usage
 
