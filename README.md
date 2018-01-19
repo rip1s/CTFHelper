@@ -12,6 +12,6 @@ A simple Burp extender helper in CTF
  
  2. Use burp's extender page to add a new extender.
  
-# Result
+# Example
 
 ![](https://github.com/unamer/CTFHelper/raw/master/result.png)
