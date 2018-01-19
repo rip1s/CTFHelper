@@ -10,7 +10,7 @@
 
  1. Set up jython variable correctly.
  
- 2. Use burp's extender page to add a new extender.
+ 2. Use burp's extender page and add a new extension.
  
 ## Example
 
