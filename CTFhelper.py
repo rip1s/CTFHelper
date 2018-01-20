@@ -20,9 +20,14 @@ class backupScan(IScannerCheck):
         self.hs = set()
         self.patterns = {
             re.compile(r'([^\/]*\.php\d{0,1})', re.IGNORECASE): [r'.\1.swp', r'.\1.swn', r'.\1.swo', r'\1.bak',
-                                                                 r'\1.zip', r'.\1.txt', r'\1.~', r'\1~'],
-            re.compile(r'([^\/]*\.)php\d{0,1}', re.IGNORECASE): [r'\1txt', r'\1bak', r'.\1swp', r'\1swn', r'\1swo',
-                                                                 r'\1zip', r'\1~']}
+                                                                 r'\1.zip', r'.\1.txt', r'\1.~', r'\1~', r'\1.bak',
+                                                                 r'\1.bak~', r'\1.source', r'\1_source', r'\1.old',
+                                                                 '\1_old', r'\1.new', r'\1_new', r'.\1.un~', r'\1-',
+                                                                 r'\1_'],
+            re.compile(r'([^\/]*\.)(php\d{0,1})', re.IGNORECASE): [r'\1txt', r'\1bak', r'.\1swp', r'\1swn', r'\1swo',
+                                                                   r'\1zip', r'\1~', r'\1bak.\2', r'\1rar', r'\1tar.gz',
+                                                                   r'\1tar.xz', r'\17z', r'\1new.\2', r'\1new_\2',
+                                                                   r'\1~\2']}
 
     def doPassiveScan(self, baseRequestResponse):
         # Nope ...
