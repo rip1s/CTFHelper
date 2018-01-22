@@ -80,7 +80,8 @@ class DirScan(IScannerCheck):
     def __init__(self):
         self.hs = set()
         self.patterns = ['.git', '.git/index', '.hg', '.svn', '.idea', '.git/config', '.idea/workspace.xml', '.bzr',
-                         'wwwroot.zip', 'www.zip', 'backup.zip']
+                         'wwwroot.zip', 'www.zip', 'backup.zip', '.htpasswd', 'www.tar.gz', 'backup.tar.gz',
+                         'wwwroot.tar.gz', '.DS_Store','.git/config']
 
     def doPassiveScan(self, baseRequestResponse):
         # Nope ...
